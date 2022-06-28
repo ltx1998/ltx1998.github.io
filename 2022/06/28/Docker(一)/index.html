@@ -16,26 +16,26 @@
   <meta name="author" content="草莓乱">
   <meta name="keywords" content="">
   
-    <meta name="description" content="docker 1DockerDocker 简介背景开发和运维之间因为环境不同而导致的矛盾 集群环境下每台机器部署相同的应用 DevOps(Development and Operations) 简介Docker是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的容器中，然后发布到 任何流行的Linux机器上，也可以实现虚拟化，容器是完全使用沙箱机制，相互之间不会有任何接口">
+    <meta name="description" content="DockerDocker 简介背景开发和运维之间因为环境不同而导致的矛盾 集群环境下每台机器部署相同的应用 DevOps(Development and Operations) 简介Docker是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的容器中，然后发布到 任何流行的Linux机器上，也可以实现虚拟化，容器是完全使用沙箱机制，相互之间不会有任何接口。 Docker是">
 <meta property="og:type" content="article">
-<meta property="og:title" content="草莓乱">
+<meta property="og:title" content="docker(1)">
 <meta property="og:url" content="http://example.com/2022/06/28/Docker(%E4%B8%80)/index.html">
 <meta property="og:site_name" content="草莓乱">
-<meta property="og:description" content="docker 1DockerDocker 简介背景开发和运维之间因为环境不同而导致的矛盾 集群环境下每台机器部署相同的应用 DevOps(Development and Operations) 简介Docker是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的容器中，然后发布到 任何流行的Linux机器上，也可以实现虚拟化，容器是完全使用沙箱机制，相互之间不会有任何接口">
+<meta property="og:description" content="DockerDocker 简介背景开发和运维之间因为环境不同而导致的矛盾 集群环境下每台机器部署相同的应用 DevOps(Development and Operations) 简介Docker是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的容器中，然后发布到 任何流行的Linux机器上，也可以实现虚拟化，容器是完全使用沙箱机制，相互之间不会有任何接口。 Docker是">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/ltx1998/images/2022-6-22/202206220925740.jpg">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/ltx1998/images/2022-6-22/202206220926139.jpg">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/ltx1998/images/2022-6-22/202206220926972.jpg">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/ltx1998/images/2022-6-22/202206220926543.jpg">
 <meta property="article:published_time" content="2022-06-28T11:58:12.692Z">
-<meta property="article:modified_time" content="2022-06-28T11:57:42.759Z">
+<meta property="article:modified_time" content="2022-06-28T12:10:26.617Z">
 <meta property="article:author" content="草莓乱">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/ltx1998/images/2022-6-22/202206220925740.jpg">
   
   
   
-  <title>草莓乱</title>
+  <title>docker(1) - 草莓乱</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -217,7 +217,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text=""></span>
+            <span id="subtitle" data-typed-text="docker(1)"></span>
           
         </div>
 
@@ -240,7 +240,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          4.2k 字
+          4.1k 字
         
       </span>
     
@@ -297,13 +297,12 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none"></h1>
+            <h1 style="display: none">docker(1)</h1>
             
             
               <div class="markdown-body">
                 
-                <hr>
-<h2 id="docker-1"><a href="#docker-1" class="headerlink" title="docker 1"></a>docker 1</h2><h1 id="Docker"><a href="#Docker" class="headerlink" title="Docker"></a>Docker</h1><h2 id="Docker-简介"><a href="#Docker-简介" class="headerlink" title="Docker 简介"></a>Docker 简介</h2><h3 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h3><p>开发和运维之间因为环境不同而导致的矛盾</p>
+                <h1 id="Docker"><a href="#Docker" class="headerlink" title="Docker"></a>Docker</h1><h2 id="Docker-简介"><a href="#Docker-简介" class="headerlink" title="Docker 简介"></a>Docker 简介</h2><h3 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h3><p>开发和运维之间因为环境不同而导致的矛盾</p>
 <p>集群环境下每台机器部署相同的应用</p>
 <p>DevOps(Development and Operations)</p>
 <h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>Docker是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的容器中，然后发布到 任何流行的Linux机器上，也可以实现虚拟化，容器是完全使用沙箱机制，相互之间不会有任何接口。</p>
@@ -466,7 +465,7 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div></div>
+      <div>docker(1)</div>
       <div>http://example.com/2022/06/28/Docker(一)/</div>
     </div>
     <div class="license-meta">
@@ -513,8 +512,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/06/28/Docker(%E4%BA%8C)/" title="">
-                        <span class="hidden-mobile"></span>
+                      <a href="/2022/06/28/Docker(%E4%BA%8C)/" title="docker(2)">
+                        <span class="hidden-mobile">docker(2)</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
