@@ -1,0 +1,710 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="草莓乱">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="Linux入门Linux一.简介Linux（i&#x2F;ˈlɪnəks&#x2F; LIN-əks）是一种自由和开放源码的类UNIX操作系统。该操作系统的内核由林纳斯·托瓦兹在1991年10月5日首次发布[5][6]，在加上用户空间的应用程序之后，成为Linux操作系统。Linux也是自由软件和开放源代码软件发展中最著名的例子。只要遵循GNU 通用公共许可证（GPL），任何个人和机构都可以自由">
+<meta property="og:type" content="article">
+<meta property="og:title" content="草莓乱">
+<meta property="og:url" content="http://example.com/2022/06/28/Linux/index.html">
+<meta property="og:site_name" content="草莓乱">
+<meta property="og:description" content="Linux入门Linux一.简介Linux（i&#x2F;ˈlɪnəks&#x2F; LIN-əks）是一种自由和开放源码的类UNIX操作系统。该操作系统的内核由林纳斯·托瓦兹在1991年10月5日首次发布[5][6]，在加上用户空间的应用程序之后，成为Linux操作系统。Linux也是自由软件和开放源代码软件发展中最著名的例子。只要遵循GNU 通用公共许可证（GPL），任何个人和机构都可以自由">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Speakerlink-new.svg/11px-Speakerlink-new.svg.png">
+<meta property="article:published_time" content="2022-06-28T11:56:41.934Z">
+<meta property="article:modified_time" content="2022-06-28T11:54:49.941Z">
+<meta property="article:author" content="草莓乱">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Speakerlink-new.svg/11px-Speakerlink-new.svg.png">
+  
+  
+  
+  <title>草莓乱</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.2","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"kPRFggndbtX6HJOaJQzE8duC-gzGzoHsz","app_key":"hE4Hjz0bLeolvYfo3SRHzWL2","server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+
+  
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>草莓乱</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text=""></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2022-06-28 19:56" pubdate>
+          2022年6月28日 晚上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          2.6k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          22 分钟
+        
+      </span>
+    
+
+    
+    
+      
+        <span id="leancloud-page-views-container" class="post-meta" style="display: none">
+          <i class="iconfont icon-eye" aria-hidden="true"></i>
+          <span id="leancloud-page-views"></span> 次
+        </span>
+        
+      
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none"></h1>
+            
+            
+              <div class="markdown-body">
+                
+                <hr>
+<h2 id="Linux入门"><a href="#Linux入门" class="headerlink" title="Linux入门"></a>Linux入门</h2><h1 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h1><h2 id="一-简介"><a href="#一-简介" class="headerlink" title="一.简介"></a>一.简介</h2><p><strong>Linux</strong>（<a target="_blank" rel="noopener" href="https://upload.wikimedia.org/wikipedia/commons/0/03/Linus-linux.ogg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Speakerlink-new.svg/11px-Speakerlink-new.svg.png" srcset="/img/loading.gif" lazyload alt="聆听"></a><strong><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/File:Linus-linux.ogg">i</a></strong><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Help:%E8%8B%B1%E8%AA%9E%E5%9C%8B%E9%9A%9B%E9%9F%B3%E6%A8%99">&#x2F;ˈlɪnəks&#x2F;</a> <a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Wikipedia:%E7%99%BC%E9%9F%B3%E9%87%8D%E6%8B%BC"><em>LIN-əks</em></a>）是一种<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E8%87%AA%E7%94%B1%E5%8F%8A%E5%BC%80%E6%94%BE%E6%BA%90%E4%BB%A3%E7%A0%81%E8%BD%AF%E4%BB%B6">自由和开放源码</a>的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E7%B1%BBUnix%E7%B3%BB%E7%BB%9F">类UNIX</a><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E4%BD%9C%E6%A5%AD%E7%B3%BB%E7%B5%B1">操作系统</a>。该操作系统的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%86%85%E6%A0%B8">内核</a>由<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%9E%97%E7%BA%B3%E6%96%AF%C2%B7%E6%89%98%E7%93%A6%E5%85%B9">林纳斯·托瓦兹</a>在1991年10月5日首次发布[<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Linux#cite_note-5">5]</a>[<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Linux#cite_note-6">6]</a>，在加上<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E4%BD%BF%E7%94%A8%E8%80%85%E7%A9%BA%E9%96%93">用户空间</a>的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%87%89%E7%94%A8%E7%A8%8B%E5%BC%8F">应用程序</a>之后，成为Linux操作系统。Linux也是<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E8%87%AA%E7%94%B1%E8%BD%AF%E4%BB%B6">自由软件</a>和<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%BC%80%E6%94%BE%E6%BA%90%E4%BB%A3%E7%A0%81%E8%BD%AF%E4%BB%B6">开放源代码软件</a>发展中最著名的例子。只要遵循<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/GNU%E9%80%9A%E7%94%A8%E5%85%AC%E5%85%B1%E8%AE%B8%E5%8F%AF%E8%AF%81">GNU 通用公共许可证</a>（GPL），任何个人和机构都可以自由地使用Linux的所有底层<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%BA%90%E4%BB%A3%E7%A0%81">源代码</a>，也可以自由地修改和再发布。大多数Linux系统还包括像提供<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/GUI">GUI</a>的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/X_Window">X Window</a>之类的程序。除了一部分专家之外，大多数人都是直接使用<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Linux%E7%99%BC%E8%A1%8C%E7%89%88">Linux 发行版</a>，而不是自己选择每一样组件或自行设置。</p>
+<p><strong>Linux</strong>严格来说是单指操作系统的内核，因操作系统中包含了许多<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/GUI">用户图形接口</a>和其他实用工具。如今Linux常用来指基于Linux的完整操作系统，内核则改以<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Linux%E5%86%85%E6%A0%B8">Linux内核</a>称之。由于这些支持用户空间的系统工具和库主要由<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E7%90%86%E6%9F%A5%E5%BE%B7%C2%B7%E6%96%AF%E6%89%98%E6%9B%BC">理查德·斯托曼</a>于1983年发起的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/GNU%E8%A8%88%E5%8A%83">GNU计划</a>提供，<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E8%87%AA%E7%94%B1%E8%BD%AF%E4%BB%B6%E5%9F%BA%E9%87%91%E4%BC%9A">自由软件基金会</a>提议将其组合系统命名为<strong>GNU&#x2F;Linux</strong>[<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Linux#cite_note-lsag-7">7]</a>[<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Linux#cite_note-gnu_homepage-8">8]</a>，但Linux不属于<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/GNU%E8%A8%88%E5%8A%83">GNU计划</a>，这个名称并没有得到社区的一致认同。</p>
+<p>通常情况下，Linux被打包成供个人计算机和服务器使用的Linux发行版，一些流行的主流Linux发布版，包括<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Debian">Debian</a>（及其派生版本<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Ubuntu">Ubuntu</a>、<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Linux_Mint">Linux Mint</a>）、<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Fedora">Fedora</a>（及其相关版本<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Red_Hat_Enterprise_Linux">Red Hat Enterprise Linux</a>、<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/CentOS">CentOS</a>）和<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/OpenSUSE">openSUSE</a>等。Linux发行版包含Linux内核和支撑内核的实用<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A8%8B%E5%BA%8F">程序</a>和库，通常还带有大量可以满足各类需求的应用程序。个人计算机使用的Linux发行版通常包含<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/X_Window">X Window</a>和一个相应的桌面环境，如<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/GNOME">GNOME</a>或<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/KDE">KDE</a>。桌面Linux操作系统常用的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F">应用程序</a>，包括<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Firefox">Firefox</a>网页浏览器、<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/LibreOffice">LibreOffice</a>办公软件、<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/GIMP">GIMP</a>图像处理工具等。由于Linux是自由软件，任何人都可以创建一个符合自己需求的Linux发行版。</p>
+<p>centos</p>
+<h2 id="二-准备环境"><a href="#二-准备环境" class="headerlink" title="二.准备环境"></a>二.准备环境</h2><p>所需环境:</p>
+<p>Oracle VM VitualBox</p>
+<p>CentOS7</p>
+<p>XShell Plus</p>
+<p>JDK8</p>
+<p>Tomcat8</p>
+<p>详细安装步骤见视频</p>
+<p>百度云下载地址:</p>
+<p>链接：<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1kLKP-Vyq5cFI2eDjbvNvGQ">https://pan.baidu.com/s/1kLKP-Vyq5cFI2eDjbvNvGQ</a><br>提取码：63vk<br>复制这段内容后打开百度网盘手机App，操作更方便哦–来自百度网盘超级会员V3的分享</p>
+<h2 id="三-常用命令"><a href="#三-常用命令" class="headerlink" title="三.常用命令"></a>三.常用命令</h2><p>常用命令:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_">#</span><span class="language-bash">清屏</span><br>clear<br><span class="hljs-meta prompt_">#</span><span class="language-bash">显示文件和目录 -l:文件的详细信息,-a:列出的文件包含隐藏文件</span><br>ls<br><span class="hljs-meta prompt_">#</span><span class="language-bash">进入到XXX目录</span><br>cd<br><span class="hljs-meta prompt_">#</span><span class="language-bash">新建目录</span><br>mkdir<br><span class="hljs-meta prompt_">#</span><span class="language-bash">以文本形式显示文件内容</span><br>cat<br><span class="hljs-meta prompt_">#</span><span class="language-bash">复制文件</span><br>cp<br><span class="hljs-meta prompt_">#</span><span class="language-bash">删除文件</span><br>rm<br><span class="hljs-meta prompt_">#</span><span class="language-bash">生成一个内容文件</span><br>echo<br><span class="hljs-meta prompt_">#</span><span class="language-bash">生成一个空文件</span><br>touch<br><span class="hljs-meta prompt_">#</span><span class="language-bash">查看网络信息</span><br>ip addr<br>ifconfig<br><span class="hljs-meta prompt_">#</span><span class="language-bash">测试网络连通</span><br>ping<br><span class="hljs-meta prompt_">#</span><span class="language-bash">系统信息</span><br>uname<br><span class="hljs-meta prompt_">#</span><span class="language-bash">主机名</span><br>hostname<br><span class="hljs-meta prompt_">#</span><span class="language-bash">重启电脑</span><br>reboot<br><span class="hljs-meta prompt_">#</span><span class="language-bash">立刻关机</span><br>shutdown -h now<br><span class="hljs-meta prompt_">#</span><span class="language-bash">解压 -c:建立一个归档文件的参数指令,-z:是否需要用 gzip 压缩,-x:解开一个归档文件的参数指令,-v:压缩的过程中显示文件,-f:使用档名，在f之后要立即接档名</span><br>tar -zxvf xxx<br><span class="hljs-meta prompt_">#</span><span class="language-bash">编辑文件 vi:系统自带编辑</span><br><span class="hljs-meta prompt_">#</span><span class="language-bash">编辑模式:等待编辑命令输入</span><br><span class="hljs-meta prompt_">#</span><span class="language-bash">插入模式:编辑模式下，输入i进入插入模式，插入文本信息</span><br><span class="hljs-meta prompt_">#</span><span class="language-bash">命令模式:在编辑模式下，输入:进行命令模式</span><br><span class="hljs-meta prompt_">#</span><span class="language-bash">常用命令 :q(直接退出),:q!(强制退出),:wq(保存后退出,并可以新建文件)</span><br>vi<br></code></pre></td></tr></table></figure>
+
+<p>防火墙配置:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_">#</span><span class="language-bash">查看状态</span><br>systemctl status firewalld.service<br><span class="hljs-meta prompt_">#</span><span class="language-bash">启动</span><br>systemctl start firewalld.service<br><span class="hljs-meta prompt_">#</span><span class="language-bash">重启</span><br>systemctl restart firewalld.service<br><span class="hljs-meta prompt_">#</span><span class="language-bash">停止</span><br>systemctl stop firewalld.service<br><span class="hljs-meta prompt_">#</span><span class="language-bash">查看规则</span><br>firewall-cmd --list-all<br><span class="hljs-meta prompt_">#</span><span class="language-bash">查询端口是否开放</span><br>firewall-cmd --query-port=8080/tcp<br><span class="hljs-meta prompt_">#</span><span class="language-bash">开放8080端口</span><br>firewall-cmd --permanent --add-port=8080/tcp<br><span class="hljs-meta prompt_">#</span><span class="language-bash">移除端口</span><br>firewall-cmd --permanent --remove-port=8080/tcp<br></code></pre></td></tr></table></figure>
+
+<h2 id="四-开发学习环境"><a href="#四-开发学习环境" class="headerlink" title="四.开发学习环境"></a>四.开发学习环境</h2><h3 id="1-安装Java"><a href="#1-安装Java" class="headerlink" title="1.安装Java"></a>1.安装Java</h3><p>传输文件到服务器:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_">#</span><span class="language-bash">lrzsz是一个xhsell传输文件的小工具,rz为上传文件到服务器,sz为下载文件到宿主机</span><br><span class="hljs-meta prompt_">#</span><span class="language-bash">安装</span><br>yum install -y lrzsz<br><span class="hljs-meta prompt_">#</span><span class="language-bash">传输jdk压缩包文件</span><br>rz<br></code></pre></td></tr></table></figure>
+
+<p>解压:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs shell">tar -zxvf jdk-8u161-linux-x64.tar.gz<br><span class="hljs-meta prompt_">#</span><span class="language-bash">变更目录名</span><br>mv jdk1.8-161 jdk8<br></code></pre></td></tr></table></figure>
+
+<p>环境变量配置:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs shell">vi /etc/profile<br><span class="hljs-meta prompt_"># </span><span class="language-bash">最后一行插入</span><br>export JAVA_HOME=/usr/local/java/jdk8<br>export CLASSPATH=.:$&#123;JAVA_HOME&#125;/jre/lib/rt.jar:$&#123;JAVA_HOME&#125;/lib/dt.jar:$&#123;JAVA_HOME&#125;/lib/tools.jar<br>export PATH=$PATH:$&#123;JAVA_HOME&#125;/bin<br><span class="hljs-meta prompt_"># </span><span class="language-bash">更新配置文件 <span class="hljs-built_in">source</span>命令通常用于重新执行刚修改的初始化文档，如 .bash_profile 和 .profile 这些配置文件。</span><br>source profile<br></code></pre></td></tr></table></figure>
+
+<p>验证:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">java -version<br></code></pre></td></tr></table></figure>
+
+<h3 id="2-安装Tomcat"><a href="#2-安装Tomcat" class="headerlink" title="2.安装Tomcat"></a>2.安装Tomcat</h3><p>传输安装文件:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">rz<br></code></pre></td></tr></table></figure>
+
+<p>解压:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs shell">tar -zxvf apache-tomcat-8.5.59.tar.gz<br><span class="hljs-meta prompt_">#</span><span class="language-bash">变更目录名</span><br>mv apache-tomcat-8.5.59 tomcat8<br></code></pre></td></tr></table></figure>
+
+<p>启动:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_">#</span><span class="language-bash">tomcat安装好之后和windows的tomcat目录一致</span><br><span class="hljs-meta prompt_">#</span><span class="language-bash">进入到tomcat的bin目录启动tomcat</span><br>cd /bin<br>./startup.sh<br></code></pre></td></tr></table></figure>
+
+<p>停止</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">./shutdown.sh<br></code></pre></td></tr></table></figure>
+
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div></div>
+      <div>http://example.com/2022/06/28/Linux/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>草莓乱</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2022年6月28日</div>
+        </div>
+      
+      
+      <div class="license-meta-item">
+        <div>许可协议</div>
+        <div>
+          
+            
+            
+              <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+              <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                <i class="iconfont icon-by"></i>
+              </span>
+              </a>
+            
+          
+        </div>
+      </div>
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2022/06/28/Nginx%E5%85%A5%E9%97%A8/" title="">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile"></span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2022/06/28/java%E6%8A%80%E6%9C%AF%E6%A0%88/" title="">
+                        <span class="hidden-mobile"></span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+  <article id="comments" lazyload>
+    
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://lib.baomitu.com/valine/1.4.17/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"kPRFggndbtX6HJOaJQzE8duC-gzGzoHsz","appKey":"hE4Hjz0bLeolvYfo3SRHzWL2","path":"window.location.pathname","placeholder":null,"avatar":"retro","meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":false},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
+        Fluid.utils.waitElementVisible('#valine .vcontent', () => {
+          var imgSelector = '#valine .vcontent img:not(.vemoji)';
+          Fluid.plugins.imageCaption(imgSelector);
+          Fluid.plugins.fancyBox(imgSelector);
+        })
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+  </article>
+
+
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="leancloud-site-pv-container" style="display: none">
+        总访问量 
+        <span id="leancloud-site-pv"></span>
+         次
+      </span>
+    
+    
+      <span id="leancloud-site-uv-container" style="display: none">
+        总访客数 
+        <span id="leancloud-site-uv"></span>
+         人
+      </span>
+    
+    
+
+  
+</div>
+
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      headingSelector : CONFIG.toc.headingSelector || 'h1,h2,h3,h4,h5,h6',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      collapseDepth   : CONFIG.toc.collapseDepth || 0,
+      scrollSmooth    : true,
+      headingsOffset  : -boardTop
+    });
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.10/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script defer src="/js/leancloud.js" ></script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
