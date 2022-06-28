@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title></title>
+    <link href="/2022/06/28/GitHub+PicGo+jsdelivr%20%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A%E6%AD%A5%E9%AA%A4/"/>
+    <url>/2022/06/28/GitHub+PicGo+jsdelivr%20%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A%E6%AD%A5%E9%AA%A4/</url>
+    
+    <content type="html"><![CDATA[<p><strong>准备工作:</strong></p><ol><li>使用GitHub创建一个公开的仓库，然后点击头像，<code>settings</code>里面找到<code>Developer settings</code>，然后在</li></ol><p>左侧菜单栏找到<code>Personal access tokens</code>，选择<code>new token</code>,名字和<code>repo</code>打勾就行，其他随便弄弄，把token保存下来，GitHub的任务就完成了.</p><p>GitHub的传送门：<a href="https://github.com/">GitHub</a></p><p>PicGo的传送门：<a href="https://github.com/Molunerfinn/PicGo/releases/tag/v2.3.0">picgo</a></p><ol start="2"><li>这里选择最新稳定版本的，加了beta都是测试版本，下载好了打开软件</li></ol><img src="https://cdn.jsdelivr.net/gh/ltx1998/images/2022-6-13/202206131927421.png"/><p>左侧选择GitHub，其他设置分别是：</p><blockquote><ul><li>用户名+仓库名</li><li>分支名</li><li>刚刚复制好的token</li><li>存储到GitHub的路径，建议在前面加上日期，方便管理</li><li>域名：<a href="https://cdn.jsdelivr.net/gh/%E7%94%A8%E6%88%B7%E5%90%8D%E4%BB%93%E5%BA%93%E5%90%8D">https://cdn.jsdelivr.net/gh/用户名仓库名</a></li></ul></blockquote><p>3.使用说明</p><p>一般直接把照片拖进去，或者用快捷键<code>PicGo设置</code>,修改快捷键，设置成Alt+c，方便好用</p><img src="https://cdn.jsdelivr.net/gh/ltx1998/images/2022-6-13/202206131927161.png"/>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  
+</search>
