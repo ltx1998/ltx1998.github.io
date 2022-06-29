@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>GitHub高效找开源项目</title>
+    <link href="/2022/06/29/GitHub%E9%AB%98%E6%95%88%E6%89%BE%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    <url>/2022/06/29/GitHub%E9%AB%98%E6%95%88%E6%89%BE%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/</url>
+    
+    <content type="html"><![CDATA[<p>根据名字搜索：</p><figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs apache"><span class="hljs-attribute">in</span>:name spring boot stars:&gt;<span class="hljs-number">3000</span> forks:&gt;<span class="hljs-number">100</span><br></code></pre></td></tr></table></figure><p>根据详情搜索</p><figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs apache"><span class="hljs-attribute">in</span>:readme spring boot stars:&gt;<span class="hljs-number">3000</span><br></code></pre></td></tr></table></figure><p>根据描述里面搜索</p><figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs apache"><span class="hljs-attribute">in</span>:description 微服务 language:java pushed:&gt;<span class="hljs-number">2020</span>-<span class="hljs-number">01</span>-<span class="hljs-number">01</span><br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>docker(1)</title>
     <link href="/2022/06/28/Docker(%E4%B8%80)/"/>
     <url>/2022/06/28/Docker(%E4%B8%80)/</url>
